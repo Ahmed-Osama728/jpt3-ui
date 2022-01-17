@@ -1,0 +1,141 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 6rem;
+}
+
+.navbar__links {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1;
+}
+
+.navbar__links-logo {
+  margin-right: 2rem;
+}
+
+.navbar__links-logo img {
+  height: 16px;
+  width: 62.56px;
+}
+
+.navbar__links-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar__links-sign {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+.navbar__links-container p,
+.navbar__links-sign p,
+.navbar__links-menu_container-links p,
+.navbar__links-menu_container-sign p {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  margin: 0 1rem;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+.navbar__links-container a,
+.navbar__links-sign a,
+.navbar__links-menu_container-links a,
+.navbar__links-menu_container-sign a {
+  color: #ffffff;
+}
+
+.navbar__links-sign button,
+.navbar__links-menu_container-sign button {
+  background: #ff4820;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.navabr__links-menu {
+  position: relative;
+  margin-left: 1rem;
+  display: none;
+}
+
+.navbar__links-menu svg {
+  cursor: pointer;
+}
+
+.navbar__links-menu_container-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  margin-top: 1rem;
+  min-width: 210px;
+  text-align: end;
+  padding: 2rem;
+  background: var(--color-footer);
+  border-radius: 5px;
+  box-shadow: 0 0 5 rgba(0, 0, 0, 0, 2);
+}
+
+.navbar__links-menu_container-links p {
+  margin: 1rem 0;
+}
+
+.navbar__links-menu_container-sign {
+  display: none;
+}
+
+@media screen and (max-width: 1050px) {
+  .navbar__links-container {
+    display: none;
+  }
+  .navabr__links-menu {
+    display: flex;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .navbar__links-container {
+    display: none;
+  }
+  .navabr__links-menu {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .navbar {
+    padding: 2rem 4rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .navbar {
+    padding: 2rem;
+  }
+  .navbar__links-sign {
+    display: none;
+  }
+  .navabr__links-menu {
+    justify-content: flex-end;
+    flex: 1;
+  }
+  .navbar__links-menu_container-sign {
+    display: block;
+  }
+}
